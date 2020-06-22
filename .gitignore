@@ -1,0 +1,10 @@
+# Cache files
+__pycache__/
+
+# Development files
+.vscode
+.env
+
+# Sensitive information
+src
+dist
