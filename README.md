@@ -18,4 +18,11 @@ source .venv/bin/activate
 
 Now, install all python packages with `pip install -r requirements.txt`
 
+
+## Features
+WIP
+
+### Blocklist
+See `blocklist.example.txt` - simply add one mail address per line to exclude it.
+
 :copyright: Fundevogel Kinder- und Jugendbuchhandlung

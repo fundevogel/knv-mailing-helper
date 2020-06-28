@@ -8,3 +8,4 @@ __pycache__/
 # Sensitive information
 src
 dist
+blocklist.txt

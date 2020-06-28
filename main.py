@@ -32,9 +32,15 @@ if __name__ == '__main__':
     csv_files = glob.glob(os.path.join(src, 'Orders_*.csv'))
     raw = load_csv(csv_files)
 
+    with open('blocklist.txt', 'r') as file:
+        blocklist = file.read().splitlines()
+
     data  = []
 
     for mail_address, csv_data in group_data(raw).items():
+        if mail_address in blocklist:
+            continue
+
         item = max(csv_data, key=lambda x:x['timeplaced'])
 
         try:
